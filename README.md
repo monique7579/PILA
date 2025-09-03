@@ -1,73 +1,95 @@
-# Welcome to your Lovable project
+# PILA - Philippines Language Adventure
 
-## Project info
+A beautiful, gamified language learning app for Philippine languages, built with React and deployable as a mobile app using Capacitor.
 
-**URL**: https://lovable.dev/projects/91f86e1c-c9e6-4e07-a597-481d24975430
+## Features
 
-## How can I edit this code?
+- 🇵🇭 Learn Tagalog and Bisaya
+- 🎮 Duolingo-style gamified learning
+- 📱 Mobile-first responsive design  
+- 🏆 Progress tracking with streaks and achievements
+- 🎨 Beautiful Filipino flag-inspired design
+- 📲 Cross-platform mobile app support
 
-There are several ways of editing your application.
+## Getting Started
 
-**Use Lovable**
+### Web Development
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/91f86e1c-c9e6-4e07-a597-481d24975430) and start prompting.
+1. Clone this repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run dev`
+4. Build for production: `npm run build`
 
-Changes made via Lovable will be committed automatically to this repo.
+### Mobile App Development
 
-**Use your preferred IDE**
+PILA uses Capacitor for cross-platform mobile development. To run on mobile devices:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. **Setup**: First, export this project to your GitHub repository via the "Export to Github" button
+2. **Clone locally**: `git clone <your-repo-url> && cd <project-name>`
+3. **Install dependencies**: `npm install`
+4. **Add platforms**: 
+   - For iOS: `npx cap add ios` (requires macOS with Xcode)
+   - For Android: `npx cap add android` (requires Android Studio)
+5. **Build project**: `npm run build`
+6. **Sync native code**: `npx cap sync`
+7. **Run on device**:
+   - iOS: `npx cap run ios`
+   - Android: `npx cap run android`
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+**Note**: For mobile development, you'll need:
+- **iOS**: macOS with Xcode installed
+- **Android**: Android Studio installed
 
-Follow these steps:
+For detailed mobile setup instructions, visit: https://lovable.dev/blogs/TODO
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Technologies Used
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- **Frontend**: React 18, TypeScript, Tailwind CSS
+- **UI Components**: shadcn/ui with custom Filipino-themed variants
+- **Mobile**: Capacitor for cross-platform deployment
+- **Routing**: React Router
+- **State Management**: React Query
+- **Design System**: Custom Filipino flag-inspired color palette
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Design System
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+PILA uses a beautiful design system inspired by the Filipino flag:
+- **Primary**: Deep Filipino blue (#0038A8)
+- **Secondary**: Vibrant Filipino red (#CE1126) 
+- **Accent**: Golden yellow (#FCD116)
+- **Gradients**: Hero gradients combining flag colors
+- **Typography**: Clean, mobile-optimized fonts
+
+## Project Structure
+
+```
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # Base shadcn components
+│   ├── language-card.tsx
+│   ├── lesson-node.tsx
+│   └── ...
+├── pages/               # Route components
+│   ├── Home.tsx         # Main dashboard
+│   ├── Lessons.tsx      # Lesson selection
+│   ├── Lesson.tsx       # Individual lesson
+│   └── ...
+├── assets/              # Images and static files
+└── lib/                 # Utilities
 ```
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes following the design system
+4. Test on both web and mobile
+5. Submit a pull request
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+MIT License - see LICENSE file for details
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/91f86e1c-c9e6-4e07-a597-481d24975430) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**Maligayang pagdating sa PILA!** 🇵🇭
