@@ -24,7 +24,7 @@ export default function LessonComplete() {
   };
 
   const handleHome = () => {
-    navigate("/");
+    navigate("/dashboard");
   };
 
   return (

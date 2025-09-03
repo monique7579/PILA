@@ -48,7 +48,7 @@ export default function Lessons() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Language not found</h1>
-          <Button onClick={() => navigate("/")}>Go Home</Button>
+          <Button onClick={() => navigate("/dashboard")}>Go Home</Button>
         </div>
       </div>
     );
@@ -66,7 +66,7 @@ export default function Lessons() {
           <Button 
             variant="ghost" 
             size="icon"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/dashboard")}
           >
             <ArrowLeft className="h-5 w-5" />
           </Button>

@@ -48,6 +48,10 @@ export default function Home() {
     }
   };
 
+  const handleBackToLanding = () => {
+    navigate("/");
+  };
+
   const handleLanguageSelect = (languageId: string) => {
     setSelectedLanguage(languageId);
   };
